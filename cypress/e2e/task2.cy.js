@@ -12,9 +12,7 @@ it("task",()=>{
     cy.get('#top-cart-btn-checkout').click(); 
     cy.wait(7000); /* ==== End Cypress Studio ==== */
      //  start writing your code from here })
-    // cy.get("shippingAddress.firstname");
-    // cy.get("button action continue primary")
-    //cy.get('#shipping-new-address-form [name="firstname"]');
+   
 
     //for Email Address
     //this is id
