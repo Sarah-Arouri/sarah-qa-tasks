@@ -15,52 +15,52 @@ it("task",()=>{
    
 
     //for Email Address
-    //this is id
+    //Select using id 
     cy.get("#customer-email-fieldset #customer-email");
     //.field.required [name="username"]
     //for first name
-    //this is class
+    //select using class and attribute
     cy.get(".control [name='firstname']");
     //for last name
-    //this is class
+    //select using class and attribute
     cy.get(".control [name='lastname']");
     //for company 
-    //this is class 
+    //select using class and attribute
     cy.get(".control [name='company']");
     //for street name 
     //field1
-    //this is attribute
+    //Select using attribute
     cy.get("[name='street[0]']");
     //feild2
-    //this is attribute
+    //select using attribute
     cy.get("[name='street[1]']");
     //feild3
-    //this is attribute
+    //select using attribute
     cy.get("[name='street[2]']");
     //for city name
-    //this is attribute
+    //select using  attribute
     cy.get("[name='city']");
     //for state
-    //this is attribute
+    //select using  attribute
     cy.get("[name='region_id']");
     //for postal code
-    //this is attribute
+    //select using  attribute
     cy.get("[name='postcode']");
     //for country
-    //this is attribute
+    //select using  attribute
     cy.get("[name='country_id']");
     //for phone number
-    //this is attribute
+    //select using  attribute
     cy.get("[name='telephone']");
     //in the shipping method 
     //the first row
-    //this is attribute
+   //select using  attribute
     cy.get("[value='tablerate_bestway']");
     //the second row
-    //this is attribute
+    //select using  attribute
     cy.get("[value='flatrate_flatrate']");
     //for the button 
-    //this is class
+    //select using class
      cy.get(".primary .button");
 
     
