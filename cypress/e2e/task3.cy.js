@@ -2,12 +2,18 @@
 describe("Task3",()=>{
     it("Sign In",()=>{
     cy.visit("https://demo.productionready.io/#/");
+    //select using contains and click 
     cy.contains("Sign in").click();
     cy.visit("https://demo.productionready.io/#/login");
+    //select using attribute
     cy.get("[class='text-xs-center ng-binding']");
+    //select using parent and nth childs
     cy.get(" p > a:nth-child(2)");
+    //select using attribute with inside element
     cy.get("[class='form-group'] [type='email']");
+    //select using attribute with inside element
     cy.get("[class='form-group'] [type='password']");
+    //select using attribute
     cy.get("[class='btn btn-lg btn-primary pull-xs-right ng-binding']");
     })
 
