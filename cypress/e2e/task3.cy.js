@@ -1,9 +1,9 @@
 /// <reference types="cypress" />
 describe("Task3",()=>{
     it("Sign In",()=>{
-    cy.visit("https://demo.productionready.io/#/");
+    //cy.visit("https://demo.productionready.io/#/");
     //select using contains and click 
-    cy.contains("Sign in").click();
+    // cy.contains("Sign in").click();
     cy.visit("https://demo.productionready.io/#/login");
     //select using attribute
     cy.get("[class='text-xs-center ng-binding']");
@@ -15,6 +15,8 @@ describe("Task3",()=>{
     cy.get("[class='form-group'] [type='password']");
     //select using attribute
     cy.get("[class='btn btn-lg btn-primary pull-xs-right ng-binding']");
+    cy.contains("Sign in").click();
+    cy.visit("https://demo.productionready.io/#/");
     })
 
     it("Home",()=>{
