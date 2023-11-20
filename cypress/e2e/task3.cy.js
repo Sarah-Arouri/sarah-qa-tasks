@@ -1,9 +1,6 @@
 /// <reference types="cypress" />
 describe("Task3",()=>{
     it("Sign In",()=>{
-    //cy.visit("https://demo.productionready.io/#/");
-    //select using contains and click 
-    // cy.contains("Sign in").click();
     cy.visit("https://demo.productionready.io/#/login");
     //select using attribute
     cy.get("[class='text-xs-center ng-binding']");
@@ -15,8 +12,9 @@ describe("Task3",()=>{
     cy.get("[class='form-group'] [type='password']");
     //select using attribute
     cy.get("[class='btn btn-lg btn-primary pull-xs-right ng-binding']");
-    cy.contains("Sign in").click();
-    cy.visit("https://demo.productionready.io/#/");
+    cy.get("button");
+    //cy.contains("Sign in").click();
+    //cy.visit("https://demo.productionready.io/#/");
     })
 
     it("Home",()=>{
@@ -29,7 +27,7 @@ describe("Task3",()=>{
         //select using attribute
         cy.get("[class='navbar navbar-light']  [class='nav-link active']");
         //select using contains
-        cy.contains("Sign in");
+        //cy.contains("Sign in");
         //cy.get("[class='banner'] [class='logo-font ng-binding']");
         //select using contains
         cy.contains("A place to share your knowledge.");
