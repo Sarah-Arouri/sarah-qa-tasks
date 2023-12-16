@@ -10,7 +10,7 @@ describe("Practices",()=>{
         cy.get(".nav-sidebar > li:nth-child(2) > a").click();
         cy.wait(500);
         cy.contains("Products").click({force:true});
-        //search for new items every time to make sure tp pass test(Android)
+        //search for new items every time to make sure to pass the test(Android)
         cy.get("#SearchProductName").type("Beats");
         cy.get("[id=search-products]").click();
         cy.wait(1000)
