@@ -11,6 +11,8 @@ describe("task4",()=>{
         //cy.get("[option-label='Purple']").click();
         cy.get(".swatch-attribute-options .color:last-child").click();
         cy.get("[id='product-addtocart-button']").click();
+        cy.get(".success").should("contain","You added Radiant Tee to your ");
+        cy.get(".showcart").should("have.text","1")
         
     })
 })

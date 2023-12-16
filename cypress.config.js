@@ -9,6 +9,8 @@ module.exports = defineConfig({
     baseUrl :"https://magento.softwaretestingboard.com",
     // viewportHeight : 800,
     // viewportWidth : 900,
-    experimentalStudio : true
+    experimentalStudio : true,
+    trashAssetsBeforeRuns:true,
+    screenshotOnRunFailure:true,
   },
 });
