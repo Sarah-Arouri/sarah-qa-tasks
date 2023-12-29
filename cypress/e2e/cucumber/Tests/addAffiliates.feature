@@ -2,8 +2,8 @@
 Feature: Add a new Affiliates successfully
   The user can add a new Affiliates successfully
 
-Background: Add affilitiates functionality
-       Given The user can be able to add affilitiates successfully
+Background: Successful login
+    Given user can login successfully
 
   Scenario: Verify that the user can add new Affiliates successfully
        Given The user click on Affiliates option

@@ -3,7 +3,7 @@ Feature: Login functionality
 
     The user can be able to login successfully
 
-    Scenario: The user can be able to login successfully
+    Scenario: The user can login successfully
       Given The user navigated to nopCommerce login website
       When  Enter the user email on email input field
       And  Enter password on password input field
