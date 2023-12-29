@@ -10,14 +10,25 @@ describe("Practices",()=>{
        cy.get(".nav-sidebar > li:nth-child(2) > a").click();
        cy.wait(500);
        cy.contains("Products").click({force:true});
-       cy.contains("Add new").click();
-       cy.get("#Name").type("camera",{force:true});
+
+       for (let i = 0; i < 2; i++) {
+        cy.contains("Add new").click();
+        cy.get("#Name").type("camera",{force:true});
         cy.get(".fa-minus").first().click();
         cy.wait(3000);
         cy.get("#Price").last().clear({force:true}).type(3000,{force:true});
         cy.wait(1500);
         cy.get("#product-info").find(".fa-plus").parent().click();
         cy.get("[name=save]").click();
+       }
+    //    cy.contains("Add new").click();
+    //    cy.get("#Name").type("camera",{force:true});
+    //     cy.get(".fa-minus").first().click();
+        // cy.wait(3000);
+        // cy.get("#Price").last().clear({force:true}).type(3000,{force:true});
+        // cy.wait(1500);
+        // cy.get("#product-info").find(".fa-plus").parent().click();
+        // cy.get("[name=save]").click();
         cy.get(".alert-success").should("contain","The new product has been added successfully");
         cy.get("[id=search-products]").click();
         cy.get("#SearchProductName").type("camera");

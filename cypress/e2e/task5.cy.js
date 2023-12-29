@@ -14,7 +14,7 @@ describe("Creating an account",()=>{
       cy.visit("https://magento.softwaretestingboard.com/customer/account/create/");
       cy.get("#firstname").type("hd4d1wpw1iff");
       cy.get("#lastname").type("bdk411www1fff");
-      cy.get("#email_address").type(" h11j1dd4wwwu12@gmail.com");
+      cy.get("#email_address").type("h11j1dd4wwwu12@gmail.com");
       cy.get("#password").type("jojo!123");
       cy.get("[name='password_confirmation']").type("jojo!123");
       cy.get("[class='action submit primary']").click({ multiple: true });
