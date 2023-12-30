@@ -43,3 +43,15 @@ When("Click on save button",()=>{
 Then("The Affiliates should be added successfully",()=>{
     cy.get(".alert-success").should("contain","The new affiliate has been added successfully.")
 });
+When("Typed on First name",()=>{
+    cy.get("#SearchFirstName").type("sarah");
+});
+When("Typed on last name",()=>{
+    cy.get("#SearchLastName").type("arouri");
+});
+When("Clicked on search button",()=>{
+    cy.get("#search-affiliates").click();
+})
+Then("Checked the affiliates",()=>{
+    cy.get("#affiliates-grid tbody tr").should("contain","sarah")
+})

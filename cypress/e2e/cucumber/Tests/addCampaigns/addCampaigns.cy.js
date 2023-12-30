@@ -23,3 +23,6 @@ When("Clicks on save button",()=>{
 Then("The Campaigns should be added successfully",()=>{
     cy.get(".alert-success").should("contain","The new campaign has been added successfully.");
 });
+Then("Checked campaigns",()=>{
+    cy.get("#campaigns-grid tbody tr").should("contain","sarah");
+})
